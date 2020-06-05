@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Add Volunteer</title>
+	<link rel="icon" type="image/x-icon" href="icons\favi.ico">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/site.css">
+	<link rel="stylesheet" href="nucleo/css/nucleo.css">
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#"><i class="fas fa-hand-holding-heart"></i> huhu</a>
+			</div>
+		</nav>
+	</header>
+	<div class="container mb-5">
+		<h3>New Volunteer</h3>
+		<hr>
+		<form>
+			<div class="">
+				<div class="form-group row">
+					<label for="rp-title" class="col-sm-3 col-form-label">Name</label>
+					<div class="col-sm-9">
+						<input type="text" id="vl-name" class="form-control" autocomplete="off">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="" class="col-sm-3 col-form-label">Task</label>
+					<div class="col-sm-9">
+						<textarea id="vl-task" class="form-control"></textarea>
+					</div>
+				</div>
+			</div>
+		</form>
+			<div class="text-center mt-5">
+				<input type="button" id="Add-vl-btn" onclick="vlSubmit()" class="btn btn-outline-success btn-lg btncmn" value="Add" >
+			</div>
+	</div>
+</body>
+</html>

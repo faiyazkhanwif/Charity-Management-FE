@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Delete Account</title>
+		<link rel="icon" type="image/x-icon" href="icons\favi.ico">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/site.css">
+		<link rel="stylesheet" type="text/css" href="nucleo/css/nucleo.css">
+		<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+	</head>
+	<body class="d-flex flex-column min-vh-100">
+		<div class="wrapper flex-grow-1">
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 fixed-top">
+					<div class="container">
+						<a class="navbar-brand" href="#"><i class="fas fa-hand-holding-heart"></i> huhu</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">About Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<div class="container">
+					<div class="row nmrow">
+						<div class="col-md-6">
+							<h2>Delete Account</h2>
+							<br>
+							<p class="text-danger font-italic">Reminder : <br>All your projects and reports will be permanently deleted. <br>Once deleted, cannot be recovered.</p>
+							<br>
+							<br>
+							<a href="profile.html"><i class="fas fa-chevron-circle-left"></i> Cancel deletion</a>
+						</div>
+						<form>
+							<div class="col-md-14">
+								<h3>Confirmation :</h3>
+								<div class="form-group">
+									<label><small>Enter Username and Password for confirmation and click 'Submit'.</small></label>
+									<input id="userDel" type="text" class="form-control" autocomplete="off" placeholder="Username" name="" required>
+									<br>
+									<input type="password" id="pwDel" class="form-control" placeholder="Password" autocomplete="off" name="">
+								</div>
+								<input type="button" id="submitBtn" onclick="deleteUser()" class="btn btn-danger form-control btncmn" value="Submit" name="">
+								
+							</div>	
+						</form>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="text-center text-light bg-dark">
+			Copyright © 2020 huhu tools<br>
+			<a href="mailto:info@huhu.com.my">info@huhu.com.my</a>
+		</footer>
+
+
+		<script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+		<script type="text/javascript">
+			function deleteUser(){
+				// if input_username == Username
+				// && pw == database
+				// backend 'delete  user from DB'
+			}
+		</script>
+	</body>
+</html>
