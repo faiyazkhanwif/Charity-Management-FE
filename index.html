@@ -9,20 +9,21 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/site.css">
 		<link rel="stylesheet" href="nucleo/css/nucleo.css">
 		<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 	</head>
 	<body class="d-flex flex-column min-vh-100">
 		<div class="wrapper flex-grow-1">
 			<header>
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 fixed-top">
 					<div class="container">
-						<a class="navbar-brand" href="#"><i class="fas fa-hand-holding-heart"></i> huhu</a>
+						<a class="navbar-brand" href=""><i class="fas fa-hand-holding-heart"></i> huhu</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 							<ul class="navbar-nav ml-auto">
 								<li class="nav-item">
-									<a class="nav-link disabled" href="#">About Us</a>
+									<a class="nav-link" href="about-us.html">About Us</a>
 								</li>
 							</ul>
 						</div>
@@ -30,38 +31,36 @@
 				</nav>
 			</header>
 			<main>
-				<div class="container">
-					<div class="text-center">
+				<div class="container ">
+					<div class="text-center animate__animated animate__fadeInDown">
 						<h2 class="font-italic">For humans, By humans</h2>
 						<i class="fas fa-hand-holding-heart fa-5x p-3"></i>
 						<hr>
 					</div>
 					<br>
 
-					<form>
+					<form action="index.php" method="post" class="animate__animated animate__fadeIn animate__delay-1s">
 						<h4 class="text-center">Log In</h4>
 						<br>
-						<div class="col-sm-4 offset-4">
+						<div>
+							<?php 
+							echo $alert; ?>
+						</div>
+						<div class="col-sm-4 offset-4 ">
 							<div class="form-group">
 								<label>Username</label>
-								<input id="username" type="text" class="form-control" autocomplete="off" name="" required>
+								<input id="username" type="text" class="form-control" autocomplete="off" name="uname" required>
 							</div>
 							<div class="form-group">
 								<label>Password</label>
-								<input id="pw" type="Password" class="form-control" autocomplete="off" name="" required>
+								<input id="pw" type="Password" class="form-control" autocomplete="off" name="pass" required>
 							</div class = "text-center">
-						    <div class="form-check">
-						    	<input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-						        <label class="form-check-label" for="autoSizingCheck2">
-						        	Remember me
-						        </label>
-						    </div>
 						    <br>
-							<input type="button" id="loginBtn" class="btn btn-primary form-control btncmn" value="Login" onclick="loginFunc()" name="">
+							<input type="submit" id="loginBtn" class="btn btn-primary form-control btncmn" value="Login" onclick="loginFunc()" name="login">
 							<br>
 							<br>
 							<div class="text-center">
-								<a href="register.html">Register your account</a>
+								<a href="register.php">Register your account</a>
 							</div>
 						</div>	
 					</form>
@@ -91,7 +90,7 @@
 				// checkDB
 				// if Y -> menu
 				// if F -> alert
-				window.location.href = 'index.html';
+				window.location.href = 'index.php';
 			}
 		</script>
 	</body>
